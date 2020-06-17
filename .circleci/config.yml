@@ -59,9 +59,9 @@ workflows:
     jobs:
       - build-and-test
       - adhoc:
-          filters:
-            branches:
-              only: development
+          #filters:
+          #  branches:
+          #    only: development
           requires:
             - build-and-test
       #- beta:
